@@ -1,0 +1,107 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    pointer-events: auto;
+    background: linear-gradient(#0AEBED, #011337f5);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: #0AEBED solid 2px;
+    outline-offset: 5px;
+    text-align: center;
+}
+
+.modal.show .modal-dialog {
+    transform: none;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 15vh 10vw;
+    pointer-events: none;
+}
+
+.modal-backdrop.show {
+    opacity: 0.5!important;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+.modal-title {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.modal-body {
+    margin-top: 20px;
+
+}
+
+.modal-body p {
+    margin: 0;
+
+}
+
+.modal-body a.inactive{
+    display: inline-block;
+    margin-top: 2px;
+    padding: 5px 10px;
+    color: #FFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+.modal-body a.active{
+    display: inline-block;
+    margin-top: 2px;
+    padding: 5px 10px;
+    background-color: #002F6B;
+    color: #00FFFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+}
+
+.modal-body a:hover{
+    background-color: #002F6B;
+    color: #00FFFF;
+}
+
+.modal-footer {
+    margin-top: 30px;
+}

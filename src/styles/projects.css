@@ -1,0 +1,230 @@
+#projects .heading {
+    text-align: center;
+}
+
+#projects .heading h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 80px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right,  #00b8b8, #00b8b800);
+    
+    clip-path: polygon(
+        0 50%,
+        10% 0,
+        100% 0%,
+        100% 50%,
+        90% 100%,
+        0% 100%,
+        0% 50%
+    );
+    -webkit-clip-path: polygon(
+        0 50%,
+        10% 0,
+        100% 0%,
+        100% 50%,
+        90% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+#projects .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .content .repository{
+    width: 600px;
+    height: 400px;
+    padding: 20px 40px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#projects .content .repository .repository-head{
+    margin-bottom: 0;
+    height: 40px;
+    width: 300px;
+    background-color: #0FF;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #002F6B;
+    font-size: 1.3rem;
+    
+}
+
+#projects .content .repository .repository-head::after {
+    
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 40px 0;
+    border-color: transparent #002F6B transparent transparent;
+    right: 0;
+    top: 0;
+    position: absolute;
+    
+}
+
+#projects .content .repository .repository-body{
+    padding: 10px 20px;
+    margin-top: 0;
+    border: 2px solid #0FF;
+    background-color: #00ffff2f;
+    width: 600px;
+    height: 300px;
+
+    display: flex;
+    gap: 30px;
+}
+
+#projects .content .repository .repository-body .photo {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+#projects .content .repository .repository-body .descr {
+    flex: 3;
+    color: #FFF;
+}
+
+#projects .content .repository .repository-body .photo img {
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+#projects .content .repository .repository-body .photo img:hover {
+    transform: scale(1.1);
+}
+
+
+#projects .content .repository .repository-body .descr a {
+    color: #FFF;
+}
+
+
+@media (max-width: 992px){
+
+    #projects .heading {
+        text-align: center;
+    }
+    
+    #projects .heading h1 {
+        text-transform: uppercase;
+        display: inline-block;
+        color: #FFF;
+        text-align: center;
+        padding: 10px 80px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        background: linear-gradient(to right,  #00b8b8, #00b8b800);
+        
+        clip-path: polygon(
+            0 50%,
+            10% 0,
+            100% 0%,
+            100% 50%,
+            90% 100%,
+            0% 100%,
+            0% 50%
+        );
+        -webkit-clip-path: polygon(
+            0 50%,
+            10% 0,
+            100% 0%,
+            100% 50%,
+            90% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    
+    #projects .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #projects .content .repository{
+        width: 90%;
+        height: 400px;
+        padding: 20px 0px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    #projects .content .repository .repository-head{
+        margin-bottom: 0;
+        height: 40px;
+        width: 300px;
+        background-color: #0FF;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #002F6B;
+        font-size: 1.3rem;
+        
+    }
+    
+    #projects .content .repository .repository-head::after {
+        
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 30px 40px 0;
+        border-color: transparent #002F6B transparent transparent;
+        right: 0;
+        top: 0;
+        position: absolute;
+        
+    }
+    
+    #projects .content .repository .repository-body{
+        padding: 10px 20px;
+        margin-top: 0;
+        border: 2px solid #0FF;
+        background-color: #00ffff2f;
+        width: 90%;
+        height: 300px;
+    
+        display: flex;
+        gap: 30px;
+    }
+    
+    #projects .content .repository .repository-body .photo {
+        flex: 2;
+        display: flex;
+        align-items: center;
+    }
+    
+    #projects .content .repository .repository-body .descr {
+        flex: 3;
+        color: #FFF;
+    }
+    
+    #projects .content .repository .repository-body .photo img {
+        width: 100%;
+        transition: transform 0.2s;
+    }
+    
+    #projects .content .repository .repository-body .photo img:hover {
+        transform: scale(1.1);
+    }
+    
+    
+    #projects .content .repository .repository-body .descr a {
+        color: #FFF;
+    }
+
+}

@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #002F6B;
+}
+
+#main {
+    min-height: 100vh;
+}
+
+#nav-button {
+    z-index: 999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background:url("../images/nav_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: 0.5s;
+}
+
+#nav-button:hover {
+    width: 60px;
+    height: 60px;
+    background:url("../images/nav_icon_hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
+.btn-normal {
+    cursor: pointer;
+    background-color: #00FFFF;
+    color: #002F6B;
+    border: 2px solid #00FFFF;
+    border-radius: 18px;
+    padding: 7px 12px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.btn-normal:hover {
+    background-color: #002F6B;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    border-radius: 18px;
+    padding: 7px 12px;
+    font-weight: 700;
+}
+
+.btn-reverse {
+    cursor: pointer;
+    background-color: #002F6B;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    border-radius: 18px;
+    padding: 7px 12px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.btn-reverse:hover {
+    background-color: #00FFFF;
+    color: #002F6B;
+    border: 2px solid #00FFFF;
+    border-radius: 18px;
+    padding: 7px 12px;
+    font-weight: 700;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00dada; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00b8b8; 
+  }
+
+.personality-box {
+    margin: 40px 20px;
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+.personality-box img {
+    position: absolute;
+    z-index: -1;
+}
+
+.personality-box .content {
+    z-index: 0;
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.personality-box .content .icon {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personality-box .content .text {
+    flex: 7;
+    padding: 10px 20px;
+}
+
+.personality-box .content .text .title {
+    color: #FFF;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+}
+
+.personality-box .content .text .body {
+    color: #0AEBED;
+    font-family: 'Inconsolata', monospace;
+    padding-top: 20px;
+    text-align: justify;
+}

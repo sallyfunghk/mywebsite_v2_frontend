@@ -1,0 +1,195 @@
+#portfolio a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#portfolio hr {
+    border: none;
+    border-bottom: 1px solid #00ffffbd;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#portfolio .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio .heading {
+    text-align: center;
+}
+
+#portfolio .heading h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 80px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background: linear-gradient(to right,  #00b8b8, #00b8b800);
+    
+    clip-path: polygon(
+        0 50%,
+        10% 0,
+        100% 0%,
+        100% 50%,
+        90% 100%,
+        0% 100%,
+        0% 50%
+    );
+    -webkit-clip-path: polygon(
+        0 50%,
+        10% 0,
+        100% 0%,
+        100% 50%,
+        90% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+#portfolio section.summary,
+#portfolio section.experiences,
+#portfolio section.educations {
+    padding: 20px 40px;
+    margin: 40px;
+    border: 2px solid #0FF;
+    background-color: #00ffff2f;
+    color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#portfolio section.summary h2,
+#portfolio section.experiences h2,
+#portfolio section.educations h2 {
+    text-transform: uppercase;
+    
+}
+
+#portfolio section.summary .content,
+#portfolio section.experiences .content,
+#portfolio section.educations .content {
+    font-family: 'Inconsolata', monospace;
+}
+
+#portfolio .company-name,
+#portfolio .school-name {
+    font-size: 1.1rem;
+}
+
+#portfolio .job-title,
+#portfolio .certification {
+    font-size: 1.1rem;
+    color: #0FF;
+}
+
+#portfolio .duration {
+    color: #002F6B;
+    background-color: #0FF;
+    padding: 1px 5px;
+}
+
+
+@media (max-width: 992px){
+
+    #portfolio a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    #portfolio hr {
+        border: none;
+        border-bottom: 1px solid #00ffffbd;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #portfolio .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #portfolio .heading {
+        text-align: center;
+    }
+    
+    #portfolio .heading h1 {
+        text-transform: uppercase;
+        display: inline-block;
+        color: #FFF;
+        text-align: center;
+        padding: 10px 80px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        background: linear-gradient(to right,  #00b8b8, #00b8b800);
+        
+        clip-path: polygon(
+            0 50%,
+            10% 0,
+            100% 0%,
+            100% 50%,
+            90% 100%,
+            0% 100%,
+            0% 50%
+        );
+        -webkit-clip-path: polygon(
+            0 50%,
+            10% 0,
+            100% 0%,
+            100% 50%,
+            90% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    
+    #portfolio section.summary,
+    #portfolio section.experiences,
+    #portfolio section.educations {
+        padding: 20px 40px;
+        margin: 40px;
+        border: 2px solid #0FF;
+        background-color: #00ffff2f;
+        color: #FFF;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #portfolio section.summary h2,
+    #portfolio section.experiences h2,
+    #portfolio section.educations h2 {
+        text-transform: uppercase;
+    }
+    
+    #portfolio section.summary .content,
+    #portfolio section.experiences .content,
+    #portfolio section.educations .content {
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    #portfolio .company-name,
+    #portfolio .school-name {
+        font-size: 1.1rem;
+    }
+    
+    #portfolio .job-title,
+    #portfolio .certification {
+        font-size: 1.1rem;
+        color: #0FF;
+    }
+    
+    #portfolio .duration {
+        color: #002F6B;
+        background-color: #0FF;
+        padding: 1px 5px;
+        width: 40%;
+    }
+
+}

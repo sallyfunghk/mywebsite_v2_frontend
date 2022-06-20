@@ -1,0 +1,268 @@
+/***** S:: section banner *****/
+
+section#banner {
+    background:url("../images/home_background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100% auto;
+
+    height: 70vw;
+}
+
+section#banner .heading {
+    padding-top: 12vw;
+    text-align: center;
+    color: #DCFFFF;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+section#banner .heading h1 {
+    font-size: 5.5vw;
+    margin: 0;
+    font-weight: 400;
+}
+
+section#banner .heading h2 {
+    font-size: 4.2vw;
+    margin: 0;
+    font-weight: 400;
+}
+
+section#banner .heading button {
+    margin-top: 20px;
+}
+
+/***** E:: section banner *****/
+
+
+/***** S:: section skills *****/
+
+section#skills {
+    min-height: 100vh;
+    padding: 10px 50px;
+}
+
+section#skills .skills-container {
+    background: linear-gradient(to bottom,  #00b8b8, #00b8b814);
+    border: 2px solid #0FF;
+    margin: 50px 20px;
+    padding: 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+section#skills h1 {
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+section#skills .bar {
+    width: 80%;
+}
+
+section#skills .bar .skillbar-title {
+    text-align: end;
+    font-family: 'Inconsolata', monospace;
+}
+
+section#skills .bar .skillbar-title span {
+    background: transparent;
+}
+
+section#skills .skillbar {
+    background: transparent;
+    
+}
+
+/***** E:: section skills *****/
+
+
+/***** S:: section personality *****/
+
+section#personality {
+    min-height: 100vh;
+    padding: 50px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#personality h1 {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+  padding: 10px 80px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right,  #00b8b8, #00b8b800);
+  /*background: linear-gradient(to bottom, #000 1px, transparent 1px, transparent calc(100% - 1px), black calc(100% - 1px)) no-repeat, linear-gradient(to left, #000 1px, transparent 1px, transparent calc(100% - 1px), black calc(100% - 1px)) no-repeat;*/
+  background-position: center;
+  /*background-size: calc(100% - 1em) 100%, 100% calc(100% - 1em);*/
+  /* extra for demo */
+  clip-path: polygon(
+    0 50%,
+    10% 0,
+    100% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    0% 50%
+  );
+  -webkit-clip-path: polygon(
+    0 50%,
+    10% 0,
+    100% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    0% 50%
+  )
+}
+
+section#personality .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#personality a {
+    color: #FFF;
+}
+
+/***** E:: section personality *****/
+
+
+@media (max-width: 992px){
+    /***** S:: section banner *****/
+
+section#banner {
+    background-position: center bottom;
+    background-size: 100% auto;
+
+    height: 120vh;
+}
+
+section#banner .heading {
+    padding-top: 30vh;
+}
+
+section#banner .heading h1 {
+    font-size: 8vw;
+}
+
+section#banner .heading h2 {
+    font-size: 5vw;
+}
+
+section#banner .heading button {
+    margin-top: 20px;
+}
+
+/***** E:: section banner *****/
+
+
+/***** S:: section skills *****/
+
+section#skills {
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+section#skills .skills-container {
+    background: linear-gradient(to bottom,  #00b8b8, #00b8b814);
+    border: 2px solid #0FF;
+    margin: 50px 20px;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+section#skills h1 {
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+section#skills .bar {
+    width: 80%;
+}
+
+section#skills .bar .skillbar-title {
+    text-align: end;
+    font-family: 'Inconsolata', monospace;
+}
+
+section#skills .bar .skillbar-title span {
+    background: transparent;
+}
+
+section#skills .skillbar {
+    background: transparent;
+    
+}
+
+/***** E:: section skills *****/
+
+
+/***** S:: section personality *****/
+
+section#personality {
+    min-height: 100vh;
+    padding: 50px 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#personality h1 {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+  padding: 10px 80px;
+  margin-bottom: 40px;
+  background: linear-gradient(to right,  #00b8b8, #00b8b800);
+  /*background: linear-gradient(to bottom, #000 1px, transparent 1px, transparent calc(100% - 1px), black calc(100% - 1px)) no-repeat, linear-gradient(to left, #000 1px, transparent 1px, transparent calc(100% - 1px), black calc(100% - 1px)) no-repeat;*/
+  background-position: center;
+  /*background-size: calc(100% - 1em) 100%, 100% calc(100% - 1em);*/
+  /* extra for demo */
+  clip-path: polygon(
+    0 50%,
+    10% 0,
+    100% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    0% 50%
+  );
+  -webkit-clip-path: polygon(
+    0 50%,
+    10% 0,
+    100% 0%,
+    100% 50%,
+    90% 100%,
+    0% 100%,
+    0% 50%
+  )
+}
+
+section#personality .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section#personality a {
+    color: #FFF;
+}
+
+/***** E:: section personality *****/
+
+}
