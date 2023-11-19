@@ -12,17 +12,20 @@ import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Portfolio from './pages/Portfolio';
 import ContactMe from './pages/ContactMe';
+import Login from './pages/Login';
 
 import ScrollToTop from './components/ScrollToTop';
 
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div>
-        <Navigation />
+      <>
+      <Navigation />
+        
         <div id="main">
           <ScrollToTop />
           <Routes>
@@ -31,12 +34,13 @@ root.render(
             <Route path="/projects" element={<Projects />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact_me" element={<ContactMe />} />
+            <Route path="/login" element={<Login />} />
             <Route /*component={Notfound}*/ />
           </Routes>
         </div>
         
         <Footer />
-      </div>
+      </>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -17,12 +17,11 @@ export default function Home(){
     const executeScroll = () => startToBrowse.current.scrollIntoView()
 
     const skills = [
-        { type: 'Python', level: 50 },
-        { type: 'PHP', level: 50 },
-        { type: 'HTML/CSS', level: 50 },
-        { type: 'MySQL', level: 40 },
-        { type: 'JavaScript', level: 30 },
-        { type: 'React', level: 30 }
+        { type: 'PHP', level: 60 },
+        { type: 'GoLang', level: 60 },
+        { type: 'MySQL', level: 60 },
+        { type: 'Flutter', level: 50 },
+        { type: 'ReactJS', level: 50 }
     ];
 
     const skillColors = {
@@ -56,7 +55,7 @@ export default function Home(){
             key: "Icon",
             icon: OthersIcon,
             title: <>Others</>,
-            content: <>Would you mind to transfer to the “<a href='/about_me'>About Me</a>” page for knowing more personalities? 🥰</>
+            content: <>Would you mind to transfer to the “<a href='/about_me'>About Me</a>” page for knowing more personalities? </>
         }
     ]
 
